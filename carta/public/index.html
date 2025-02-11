@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta para mi amada</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <link rel="stylesheet" href="./css/fotos.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="container-1">
+            <!-- <img src="./assets/chicken.gif" alt="chicken" class="chiken"> -->
+            <form action="" id="form-1">
+                <h1 class="tl-l">Iniciar</h1>
+                <input type="text" placeholder="Ingrese la clave..." class="inp inp-name">
+                <button class="btn btn-l">Ingresar</button>
+                
+                <input type="checkbox" id="toggle">
+                <label for="toggle" class="lb-1">Ver pista oculta</label>
+                
+                <p class="clave">Nombre de figura en tu pulcera! &#128151</p>
+            </form>
+        </div>
+        
+        <div class="container-2">
+            <div class="item-1">
+                <h1 class="tl-2">Hay un mensaje especial para tí:</h1>
+                <img src="./assets/chk-p.gif" alt="chicken" class="chicken">
+            </div>
+            <div class="item-2">
+                <div class="cont-img" id="cont-img">
+                    <img src="https://i.pinimg.com/originals/ed/8e/0c/ed8e0cfc55c794497c429561c18c1216.gif" class="image" id="image1" alt="Foto 1">
+                    <img src="https://i.pinimg.com/originals/03/0e/86/030e86761180bea617468b23054fb357.gif" class="image" id="image2" alt="Foto 2">
+                    <img src="https://i.pinimg.com/originals/33/e6/46/33e646f636389ac41b7fc28d328e6107.gif" class="image" id="image3" alt="Foto 3">
+                    <img src="https://i.pinimg.com/originals/33/e6/46/33e646f636389ac41b7fc28d328e6107.gif" class="image" id="image4" alt="Foto 4">
+                    <img src="https://i.pinimg.com/originals/33/e6/46/33e646f636389ac41b7fc28d328e6107.gif" class="image" id="image5" alt="Foto 5">
+                </div>
+                <button class="btn btn-c">Ver Mensaje</button>
+                <div class="sms"></div>
+            </div>
+        </div>
+
+        <footer class="ft">
+            <p>Aplicación web en desarrollo por: </p>
+            <p class="ft-txt">&copy;Aaron-Lomas</p>
+        </footer>
+        <audio id="bg-music" src="./assets/melody.mp3" loop>
+            Tu navegador no soporta la etiqueta de audio.
+        </audio>
+        <audio id="ingreso-music" src="./assets/applause.mp3">
+            Tu navegador no soporta la etiqueta de audio.
+        </audio>
+        <script src="./js/main.js" defer></script>
+        <script src="./js/escritura.js" async></script>
+        <script src="./js/confetti.js"></script>
+
+        
+    </div>
+
+    <script>
+        function mostrarFotos() {
+            const images = document.getElementsByClassName('image');
+
+            for (let i = 0; i < images.length; i++) {
+                images[i].style.opacity = 1;
+            }
+        }
+    </script>
+
+
+</body>
+</html>
