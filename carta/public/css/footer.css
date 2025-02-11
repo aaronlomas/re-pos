@@ -1,0 +1,13 @@
+.ft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 5rem;
+    background-color: #2b343b;
+    color: #fff;
+    gap: 6px;
+}
+.ft-txt{
+    border-bottom: 1px solid #4adb4a;
+}
