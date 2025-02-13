@@ -77,8 +77,8 @@ var confetti = {
                 particle.y = height + 100;
             } else {
                 particle.tiltAngle += particle.tiltAngleIncrement;
-                particle.x += Math.sin(waveAngle) - 0.5;
-                particle.y += (Math.cos(waveAngle) + particle.size + confetti.speed) * 0.5;
+                particle.x += Math.sin(waveAngle) * 2;
+                particle.x += Math.sin(waveAngle) * 2 + (Math.random() - 0.5) * 3;
             }
             if (particle.x > width + 20 || particle.x < -20 || particle.y > height) {
                 if (streamingConfetti && particles.length <= confetti.maxCount)
