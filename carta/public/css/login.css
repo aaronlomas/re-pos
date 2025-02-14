@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", serif, sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+.container-1{
+    background: linear-gradient(-120deg, #f52b2b9a, transparent), 
+    url(https://stylecaster.com/wp-content/uploads/2021/02/Screen-Shot-2021-02-01-at-3.28.35-PM.png?resize=670,403);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+}
+
+.tl-l{
+    font-size: 40px;
+    margin:  0 0 20px 0;
+    padding: 0 6px;
+    color: #ffffff;
+    border: solid;
+    border-top: solid transparent;
+}
+
+#form-1{
+    margin: auto;
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.inp{
+    width: 100%;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.inp-name{
+    border: none;
+    background-color: transparent;
+    border-bottom: solid 1px #e64747;
+    outline: none;
+    color: #fff;
+}
+::placeholder{
+    color: #ffffffd3;
+}
+.btn{
+    padding: 5px;
+    width: 120px;
+    font-size: 18px;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-l{
+    background-color: #e73b3b;
+    transition: .3s;
+}
+.btn-l:hover{
+    letter-spacing: 1px;
+}
+.btn:active{
+    background-color: #5bfa1c;
+}
+
+.lb-1{
+    cursor: pointer;
+    color: #ff7070;
+    text-shadow: 0 1px 8px #ff2d2d;
+}
+.lb-1:hover{
+    text-shadow: none;
+    color: #fa2d2d;
+}
+
+/* Mostrar el texto cuando el checkbox está marcado */
+
+
+#toggle {
+    display: none;
+}
+.clave {
+    animation: clv 4s infinite;
+    scale: 0;
+    transition: .3s;
+}
+#toggle:checked ~ .clave {
+    scale: 1;
+}
+@keyframes clv{
+    from{
+        color: red;
+    }to{
+        color: transparent;
+    }
+}
